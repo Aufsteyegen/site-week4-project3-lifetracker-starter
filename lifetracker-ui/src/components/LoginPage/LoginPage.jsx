@@ -23,7 +23,7 @@ export default function LoginPage({ setLoggedIn, setAuthState, authState,
             email: email,
             password: password
           }
-          const response = await axios.post('http://localhost:3000/login', userData)
+          const response = await axios.post('https://greg-lifetracker-codepath.onrender.com/login', userData)
           const { token } = response.data
           setLoginError("")
           console.log(token)

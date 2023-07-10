@@ -24,7 +24,7 @@ export default function RegistrationPage() {
                 lastName: lastname,
                 password: password,
             }
-            await axios.post('http://localhost:3000/register', userData)
+            await axios.post('https://greg-lifetracker-codepath.onrender.com/register', userData)
             console.log('User registration successful')
             setRegistered(true)
         } catch (error) {

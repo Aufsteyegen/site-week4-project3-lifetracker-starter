@@ -1,5 +1,9 @@
 # Project #3: LifeTracker Application
 
+<a href="https://www.loom.com/share/2765cf1ae3614a5996c01c08e498aea1">
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/2765cf1ae3614a5996c01c08e498aea1-with-play.gif">
+</a>
+
 ## Overview
 
 > Data is the new oil - Clive Humbly
@@ -23,20 +27,20 @@ By the end of this project you will be able to...
 
 ### Core Features
 
-- [ ] **The Landing Page:** Display a large hero image and a brief blurb on what this application is about. *Note:* This is the only page that unauthenticated users should be able to view.
-- [ ] **Registration Page:** A form that allows the user to sign up with their email, password, username, first name, and last name.
-- [ ] **Login Page:** A form that allows users to login with email and password.
-- [ ] When a user first authenticates, they should be redirected to an authenticated view (i.e., the detailed activity page). When they sign out, all frontend data should be reset.
-- [ ] **The Nav Bar:** Implement customized views for users who are logged in vs not logged in.
-  - [ ] If the user is logged in, it should display a **Sign Out** button.
-  - [ ] If no user is logged in, it should display **Login** and **Register** buttons.
-  - [ ] Display a logo on the far left side, and contain links to the individual detailed activity pages.
-- [ ] Users should have the ability to track at least **one** type of activity (i.e., nutrition, exercise, sleep, etc.). Each activity should be tracked on separate pages.
-- [ ] **Detailed Activity Page:** Display and enter activities.
-  - [ ] Display a feed of all previously tracked activities.
-  - [ ] A form to enter relevant information (i.e., if tracking nutrition, the user can enter calories, timestamp, image, category, etc.).
-  - [ ] Each activity tracked is given a unique ID for easy lookup.
-- [ ] Deploy your website with Render. Check out our [Render Deployment Guide](https://courses.codepath.org/snippets/site/render_deployment_guide) for detailed instructions.
+- [X] **The Landing Page:** Display a large hero image and a brief blurb on what this application is about. *Note:* This is the only page that unauthenticated users should be able to view.
+- [X] **Registration Page:** A form that allows the user to sign up with their email, password, username, first name, and last name.
+- [X] **Login Page:** A form that allows users to login with email and password.
+- [X] When a user first authenticates, they should be redirected to an authenticated view (i.e., the detailed activity page). When they sign out, all frontend data should be reset.
+- [X] **The Nav Bar:** Implement customized views for users who are logged in vs not logged in.
+  - [X] If the user is logged in, it should display a **Sign Out** button.
+  - [X] If no user is logged in, it should display **Login** and **Register** buttons.
+  - [X] Display a logo on the far left side, and contain links to the individual detailed activity pages.
+- [X] Users should have the ability to track at least **one** type of activity (i.e., nutrition, exercise, sleep, etc.). Each activity should be tracked on separate pages.
+- [X] **Detailed Activity Page:** Display and enter activities.
+  - [X] Display a feed of all previously tracked activities.
+  - [X] A form to enter relevant information (i.e., if tracking nutrition, the user can enter calories, timestamp, image, category, etc.).
+  - [X] Each activity tracked is given a unique ID for easy lookup.
+- [X] Deploy your website with Render. Check out our [Render Deployment Guide](https://courses.codepath.org/snippets/site/render_deployment_guide) for detailed instructions.
 
 ### Stretch Features
 

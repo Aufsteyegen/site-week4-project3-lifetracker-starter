@@ -41,7 +41,8 @@ export default function NutritionPage({ calories, setCalories, activities, setAc
         calories: totalCals,
         quantity: quantity
       }
-      const curCalories = parseInt(localStorage.getItem('calories')) + totalCals
+      const localCals = localStorage.getItem('calories') !== (null || undefined) ? parseInt(localStorage.getItem('calories')) : 0
+      const curCalories = localCals + totalCals;
       localStorage.setItem('calories', curCalories)
       setActivities(prevActivities => {
         const newActivities = [...prevActivities, newActivity]

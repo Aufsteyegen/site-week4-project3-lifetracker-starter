@@ -8,7 +8,19 @@
     "dev-win": "set NODE_ENV=dev && nodemon --ignore 'db/*' server.js",
     "dev": "NODE_ENV=dev nodemon --ignore 'db/*' server.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.18.2",
+    "gravatar": "^1.8.1",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "nanoid": "^3.1.22",
+    "nodemon": "^2.0.7",
+    "pg": "^8.6.0"
+  },
   "devDependencies": {},
   "engines": {
     "node": ">=18.16.0"

@@ -1,0 +1,34 @@
+.activity-tile {
+    display: flex;
+    width: 680px;
+    height: 230px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.501);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    padding-left: 250px;
+  padding-right: 250px;
+  align-items: center;
+}
+
+.activity-tiles {
+    display: flex;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.activity-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

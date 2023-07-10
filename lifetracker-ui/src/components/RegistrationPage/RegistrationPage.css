@@ -1,0 +1,104 @@
+.registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.registration h1 {
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+#submit-btn {
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+#register-conditions {
+    display: flex;
+    margin-top: 10px;
+}
+
+#register-chck {
+    width: fit-content;
+    display: flex;
+    align-items: flex-start;
+    height: fit-content;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+#register-chck:input {
+    height: 35px;
+}
+
+#submit-btn:hover {
+    background-color: blue;
+    color: white;
+}
+
+span {
+    color: red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border: 1px solid blue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.501);
+
+}
+
+.registered {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.501);
+}
+
+.register-img {
+    height: 50px;
+}
+
+form input  {
+    margin-top: 10px;
+    height: 60px;
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid blue;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+    background-color: rgb(249, 249, 249);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    
+}
+
+label {
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 20px;
+    font-weight: bold;
+
+}

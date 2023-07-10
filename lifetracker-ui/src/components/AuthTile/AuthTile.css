@@ -1,0 +1,76 @@
+.single-auth-tile {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 15px;
+    background: white;
+    width: calc(50% - 10px);
+    padding: 16px;
+    min-width: 80px;
+    min-width: 430px;
+    min-height: 250px;
+    margin-bottom: 16px;
+    margin: 15px;
+    transition: all 0.15s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.501);
+    margin-top: 15px;
+}
+
+.photo{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 100px;
+    font-size: 40px;
+    height: 35px;
+    width: 35px;
+    font-weight: bold;
+    border: 1px solid rgb(0, 242, 255);
+    background-color: purple;
+    color: white;
+}
+.single-auth-tile:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.auth-tile-line {
+    display: flex;
+    background-color: blue;
+    height: 1px;
+    width: 10%;
+    margin-top: 10px;
+}
+
+.activity-date {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tile-content-wrapper {
+    display: flex;
+    font-size: 50px;
+
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.tile-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.below-tile-line {
+    display: flex;
+    height: 1px;
+    background-color: blue;
+    margin: 30px;
+    width: 430px;
+}

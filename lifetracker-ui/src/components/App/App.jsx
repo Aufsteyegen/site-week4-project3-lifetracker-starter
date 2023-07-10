@@ -32,6 +32,7 @@ function App() {
         const curCals = localStorage.getItem('calories')
         if (token !== null && token !== undefined) setLoggedIn(true)
         if (curCals !== null && curCals !== undefined) setCalories(curCals)
+        else localStorage.setItem('calories', 0)
     }, [])
 
   return (

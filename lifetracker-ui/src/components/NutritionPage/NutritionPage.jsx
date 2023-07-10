@@ -31,7 +31,7 @@ export default function NutritionPage({ calories, setCalories, activities, setAc
         calories: totalCals,
         quantity: quantity
       };
-      const response = await axios.post('http://localhost:3000/nutrition', userData)
+      const response = await axios.post('https://greg-lifetracker-codepath.onrender.com/nutrition', userData)
       console.log('Nutrition data sent.')
       console.log(response.data.id)
       const newActivity = {

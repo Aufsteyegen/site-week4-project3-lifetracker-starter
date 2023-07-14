@@ -8,6 +8,8 @@ export default function NutritionPage({ calories, setCalories, activities, setAc
   const [name, setName] = useState("")
   const [category, setCategory] = useState("")
   const [quantity, setQuantity] = useState("")
+  const [image, setImage] = useState("")
+
   
   const [error, setError] = useState("")
   const [form, setForm] = useState(false)
@@ -39,7 +41,9 @@ export default function NutritionPage({ calories, setCalories, activities, setAc
         name: name,
         category: category,
         calories: totalCals,
-        quantity: quantity
+        quantity: quantity,
+        image: image,
+        time: Date.now()
       }
       const localCals = localStorage.getItem('calories') !== (null || undefined) ? parseInt(localStorage.getItem('calories')) : 0
       const curCalories = localCals + totalCals;
@@ -53,6 +57,7 @@ export default function NutritionPage({ calories, setCalories, activities, setAc
       setNutritionSent(true)
       setNewCalories(0)
       setQuantity(0)
+      setImage("")
     } catch (error) {
       setError(error.response.data)
       console.error(error)
@@ -112,6 +117,13 @@ export default function NutritionPage({ calories, setCalories, activities, setAc
               required
               placeholder="Calories"
             ></input>
+            <input
+              value={image}
+              type="text"
+              onChange={(event) => setImage(event.target.value)}
+              required
+              placeholder="Image URL"
+            ></input>
 
             <input id="submit-btn" type="submit"></input>
           </form>
@@ -136,15 +148,18 @@ export default function NutritionPage({ calories, setCalories, activities, setAc
   activities.map(activity => (
     <div key={activity.id}>
       <AuthTile
-        key={activity.id}
-        id={activity.id}
-        showDate={true}
-        header={`${activity.name}`}
-        leftLabel={"Calories"}
-        rightLabel={"Quantity"}
-        leftValue={activity.calories}
-        rightValue={activity.quantity}
-      />
+                key={activity.id}
+                id={activity.id}
+                showDate={true}
+                header={`${activity.name}`}
+                category={activity.category}
+                leftLabel={"Calories"}
+                rightLabel={"Quantity"}
+                leftValue={activity.calories}
+                rightValue={activity.quantity}
+                imageUrl={activity.image}
+                timestamp={activity.time}
+              />
     </div>
   ))
 ) : (

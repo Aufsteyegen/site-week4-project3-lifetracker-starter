@@ -2,20 +2,29 @@ import "./AuthTile.css"
 import PropTypes from 'prop-types'
 
 
-export default function AuthTile({ showDate=false, header, leftLabel, rightLabel, leftValue, rightValue, id }) {
-    const currentDate = new Date()
-    const month = currentDate.getMonth() + 1
-    const day = currentDate.getDate()
-    const year = currentDate.getFullYear()
+
+export default function AuthTile({ showDate=false, header, leftLabel, rightLabel, 
+                                   leftValue, rightValue, id, category,
+                                   imageUrl, timestamp }) {
+    
+    const email = localStorage.getItem('email');
+    const username = email.substring(0, email.indexOf('@'));
+    
     return (
         <div>
             {showDate && (<div className="activity-date">
-            {month}/{day}/{year}
+            Timestamp: {timestamp}
             </div>)}
             {id !== "" && (<div>Activity ID: {id}</div>)}
             <div className="single-auth-tile">
                 <div>
-                    <div className="photo">{header[0].toUpperCase()}</div><b></b><h2>{header}</h2></div>
+                    <div className="photo">{header[0].toUpperCase()}
+                    </div>
+                        <div><h2>{header}</h2></div>
+                        <div>UserID: {username}</div>
+                        <div>Image URL: {imageUrl}</div>
+                        <div className="category">Category: {category}</div>
+                    </div>
                 <div className="auth-tile-line"></div>
                 <div className="tile-content-wrapper">
                 {leftLabel !== "" && (
@@ -43,5 +52,8 @@ AuthTile.propTypes = {
     rightLabel: PropTypes.string.isRequired,
     leftValue: PropTypes.any.isRequired,
     rightValue: PropTypes.any.isRequired,
-    showDate: PropTypes.any.isRequired
+    showDate: PropTypes.any.isRequired,
+    category: PropTypes.any.isRequired,
+    imageUrl: PropTypes.any.isRequired,
+    timestamp: PropTypes.any.isRequired
 }

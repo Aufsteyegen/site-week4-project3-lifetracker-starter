@@ -16,6 +16,7 @@ export default function ActivityPage({
   const [category, setCategory] = useState("");
   const [quantity, setQuantity] = useState("");
   const [error, setError] = useState("");
+  const [image, setImage] = useState("")
   const [form, setForm] = useState(false);
   const [newCalories, setNewCalories] = useState(0);
 
@@ -44,7 +45,8 @@ export default function ActivityPage({
         name: name,
         category: category,
         calories: totalCals,
-        quantity: quantity
+        quantity: quantity,
+        image: image
       };
       const localCals = localStorage.getItem('calories') !== (null || undefined) ? parseInt(localStorage.getItem('calories')) : 0
       const curCalories = localCals + totalCals;
@@ -58,6 +60,7 @@ export default function ActivityPage({
       setNutritionSent(true);
       setNewCalories(0);
       setQuantity("");
+      setImage("")
     } catch (error) {
       setError(error.response.data);
       console.error(error);
@@ -93,6 +96,7 @@ export default function ActivityPage({
           rightLabel=""
           leftValue="minutes"
           rightValue=""
+          timestamp={""}
         />
         <AuthTile
           id=""
@@ -101,6 +105,7 @@ export default function ActivityPage({
           rightLabel=""
           leftValue="minutes"
           rightValue=""
+          timestamp={""}
         />
         <AuthTile
           id=""
@@ -109,6 +114,7 @@ export default function ActivityPage({
           rightLabel=""
           leftValue="calories"
           rightValue=""
+          timestamp={""}
         />
         <div>
           <h2>Past activity feed</h2>
@@ -121,10 +127,13 @@ export default function ActivityPage({
                 id={activity.id}
                 showDate={true}
                 header={`${activity.name}`}
+                category={activity.category}
                 leftLabel={"Calories"}
                 rightLabel={"Quantity"}
                 leftValue={activity.calories}
                 rightValue={activity.quantity}
+                imageUrl={activity.image}
+                timestamp={activity.time}
               />
             </div>
           ))
@@ -161,6 +170,13 @@ export default function ActivityPage({
               onChange={(event) => setNewCalories(event.target.value)}
               required
               placeholder="Calories"
+            ></input>
+            <input
+              value={image}
+              type="text"
+              onChange={(event) => setImage(event.target.value)}
+              required
+              placeholder="Image URL"
             ></input>
             <input id="submit-btn" type="submit"></input>
           </form>

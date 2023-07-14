@@ -39,7 +39,7 @@ app.post("/register", (req, res) => {
     })
 })
 
-app.post("/login", (req, res) => {
+app.post("/login", function (req, res) {
     const secretKey = 'your_secret_key'
     const { email, password } = req.body
 

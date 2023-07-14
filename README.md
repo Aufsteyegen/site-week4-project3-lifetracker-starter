@@ -1,8 +1,12 @@
 # Project #3: LifeTracker Application
 
-<a href="https://www.loom.com/share/2765cf1ae3614a5996c01c08e498aea1">
-    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/2765cf1ae3614a5996c01c08e498aea1-with-play.gif">
-</a>
+<div>
+    <a href="https://www.loom.com/share/b0540ed5074a41f393bae1e6cef537b0">
+    </a>
+    <a href="https://www.loom.com/share/b0540ed5074a41f393bae1e6cef537b0">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/b0540ed5074a41f393bae1e6cef537b0-with-play.gif">
+    </a>
+</div>
 
 ## Overview
 

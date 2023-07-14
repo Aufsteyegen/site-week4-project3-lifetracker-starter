@@ -22,6 +22,7 @@ export default function AuthTile({ showDate=false, header, leftLabel, rightLabel
                     </div>
                         <div><h2>{header}</h2></div>
                         <div>UserID: {username}</div>
+                        <div className="card-img"><img src={imageUrl} /></div>
                         <div>Image URL: {imageUrl}</div>
                         <div className="category">Category: {category}</div>
                     </div>

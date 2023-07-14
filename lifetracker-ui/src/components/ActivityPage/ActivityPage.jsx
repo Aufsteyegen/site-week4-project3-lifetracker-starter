@@ -46,7 +46,8 @@ export default function ActivityPage({
         category: category,
         calories: totalCals,
         quantity: quantity,
-        image: image
+        image: image,
+        time: Date.now().toString()
       };
       const localCals = localStorage.getItem('calories') !== (null || undefined) ? parseInt(localStorage.getItem('calories')) : 0
       const curCalories = localCals + totalCals;
